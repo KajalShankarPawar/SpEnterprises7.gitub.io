@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>SpEnterprises </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logos/sp.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/logos/sp.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+    <style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+    </style>
+    
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__ball"></div>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+    
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="left-top">
+              <div class="email-box">
+                <a href="mailto:spenterprises4912@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>spenterprises4912@gmail.com</a>
+              </div>
+              <div class="phone-box">
+                <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+91-9136234912">+91-9136234912</a> / <a href="tel:+91- 9326087769">+91- 9326087769</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="right-top">
+              <div class="social-box">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
+                <ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/sp.png" alt="image" style="
+                        height: 74px;
+                        width: 188px;
+                        margin-top: -9px;
+                    "></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a  class="active" href="products.html">Product</a></li>
+                        <li><a target="_blank" href="https://wa.me/919136234912?text=hi">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+   	<div class="banner-area banner-bg-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="banner">
+						<h2>Product</h2>''
+						<ul class="page-title-link">
+							<li><a href="#">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <title class="message-box">Product</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+</head>
+<body>
+  <div class="section-title text-center">
+    <h3>Products</h3>
+  
+</div><!-- end title -->
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="images/gallery/Cpvc ball valve .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>pvc ball valve </p>
+          <!-- <p class="opacity-low">Architect Design</p> -->
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/gallery/Cpvc solvents .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+           <p>Cpvc solvents</p>
+          <p class="opacity-low"></p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/gallery/PVC solvents .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+         <p>PVC solvents </p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/services/plumbbing.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>plumbbing</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/gallery/Silicones .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Silicones</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/services/tools.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+         
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/gallery/Teflon Tape .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Teflon Tape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/gallery/Upvc Ball valve .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Upvc Ball valve</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/gallery/Upvc Solvents .png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Upvc Solvents</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="index.html"><img src="images/logos/sp.png" alt="" class="img-fluid logo-footer" style="
+                          height: 120px;
+                          margin-top: 64px;
+                      "></a>
+
+        </div>
+        <div class="col-md-3">
+          <div class="useful-link">
+            <h2>Useful Links</h2>
+            <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+            <div class="use-links">
+              <li><a href="index.html"><i class="fa fa-angles-double-right"></i><span class="abcicon">> </span> Home</a></li>
+              <li><a href="about.html"><i class="fa fa-angles-right"></i><span class="abcicon">> </span> About Us</a></li>
+              <li><a href="gallery.html"><i class="fa fa-angles-right"></i><span class="abcicon">> </span> Services</a></li>
+              <li><a href="contact.html"><i class="fa fa-angles-right"></i><span class="abcicon">> </span> Contact</a></li>
+            </div>
+          </div>
+
+        </div>
+                  <div class="col-md-3">
+                      <div class="social-links">
+            <h2>Follow Us</h2>
+            <img src="./assets/images/about/home_line.png" alt="">
+            <div class="social-icons">
+              <li><a href=""><i class="fa fa-facebook-f"></i> Facebook</a></li>
+              <li><a href=""><i class="fa fa-instagram"></i> Instagram</a></li>
+              <li><a href=""><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+            </div>
+          </div>
+                  
+
+                  </div>
+        <div class="col-md-3">
+          <div class="address">
+            <h2>Address</h2>
+            <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+            <div class="address-links">
+              <li class="address1"><i class="fa fa-map-marker"></i>Airoli, Navi Mumbai 400708</li>
+                 <li><a href=""><i class="fa fa-phone"></i> +91 9136234912/ +91 9326087769</a></li>
+                 <li><a href=""><i class="fa fa-envelope"></i>spenterprises4912@gmail.com</a></li>
+            </div>
+          </div>
+        </div>
+                
+      </div>
+    </div>
+
+  </footer>	
+    <section id="copy-right">
+			<div class="copy-right-sec">
+				<p class="footer-company-name">CopyRights  &copy; 2022 All Rights Reserved By <a href="#">SpEnterprises</a>
+			</div>
+
+		</section>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/portfolio.js"></script>
+    
+    <script src="js/hoverdir.js"></script>
+    <script>
+        // Fancybox Configuration
+$('[data-fancybox="gallery"]').fancybox({
+  buttons: [
+    "slideShow",
+    "thumbs",
+    "zoom",
+    "fullScreen",
+    "share",
+    "close"
+  ],
+  loop: false,
+  protect: true
+});
+
+    </script> 
+       
+
+</body>
+</html>
